@@ -18,7 +18,7 @@ def main(args):
     for username in combinations:
         try:
             urlopen('https://github.com/' + username)
-            print("No...")
+            print('.', end="", flush=True)
         except HTTPError:
             print(username + " is available!")
     

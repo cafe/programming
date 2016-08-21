@@ -1,4 +1,4 @@
-#+TITLE: Python Snippets
+#+TITLE: Julia Snippets
 #+AUTHOR: Yong
 #+DESCRIPTION: This document catalogs a set of Julia tips and tricks
 

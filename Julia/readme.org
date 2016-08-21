@@ -2,7 +2,7 @@
 #+AUTHOR: Yong
 #+DESCRIPTION: This document catalogs a set of Julia tips and tricks
 
-- Print without newline or space in Python3 ([[http://stackoverflow.com/questions/493386/how-to-print-in-python-without-newline-or-space][reference]]):
+- Print without newline or space (this is a python3 example) ([[http://stackoverflow.com/questions/493386/how-to-print-in-python-without-newline-or-space][reference]]):
 
   #+begin_src julia
   print('.', end="", flush=True)

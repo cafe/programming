@@ -1,9 +1,9 @@
-+TITLE: Python Snippets
+#+TITLE: Python Snippets
 #+AUTHOR: Yong
 #+DESCRIPTION: This document catalogs a set of Python tips and tricks (mainly Python3)
 
-+ Python3: print without newline or space ([[http://stackoverflow.com/questions/493386/how-to-print-in-python-without-newline-or-space][reference]]):
+- Python3: print without newline or space ([[http://stackoverflow.com/questions/493386/how-to-print-in-python-without-newline-or-space][reference]]):
 
-#+begin_src python
-  print('.', end="", flush=True)
-#+end_src python
+  #+begin_src python
+    print('.', end="", flush=True)
+  #+end_src python

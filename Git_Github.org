@@ -10,7 +10,6 @@
   #+END_EXAMPLE
 
 - Generate SSH key
-
   1. Remove existing SSH Key files: according to the [[https://help.github.com/articles/checking-for-existing-ssh-keys/][guide]], find the =~/.ssh= folder which has one of these files and delete the folder.
   
     #+BEGIN_EXAMPLE

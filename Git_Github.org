@@ -7,3 +7,15 @@
   [[/relative/path/to/img.jpg?raw=true "Optional Title"]]
   [[http://full/path/to/img.jpg "Optional title"]]
   #+END_EXAMPLE
+
+- Generate SSH key
+  1. Remove existing SSH Key files: according to the [[https://help.github.com/articles/checking-for-existing-ssh-keys/][guide]], find the =~/.ssh= folder which has one of these files and delete the folder.
+  
+    #+BEGIN_EXAMPLE
+    id_dsa.pub
+    id_ecdsa.pub
+    id_ed25519.pub
+    id_rsa.pub
+    #+END_EXAMPLE
+  
+  2. [[https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/][Generating a new SSH key and adding it to the ssh-agent]]

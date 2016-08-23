@@ -1,0 +1,9 @@
+#+TITLE: All the stuff about Git and Github
+
+- Add images to README file on Github
+  Take =readme.org= as an example ([[http://stackoverflow.com/questions/10189356/how-to-add-screenshot-to-readmes-in-github-repository][reference]]):
+  
+  #+BEGIN_EXAMPLE
+  [[/relative/path/to/img.jpg?raw=true "Optional Title"]]
+  [[http://full/path/to/img.jpg "Optional title"]]
+  #+END_EXAMPLE

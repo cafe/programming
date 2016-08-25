@@ -20,7 +20,7 @@ results:
 As you can see, the type is not determined in the above results. So the data types can be specified when creating array of arrays:
 
 #+BEGIN_SRC julia
-a_test=Array{Int64, 1}[[1,2],[3,4],[5,6]]
+a_test = Array{Int64, 1}[[1,2],[3,4],[5,6]]
 #+END_SRC
 
 results:
@@ -61,7 +61,7 @@ results:
  5  6
 #+END_EXAMPLE
 
-Also, if =a_test= is =Array[[1 2][3 4],[5 6]]= (more precisely, =Array{Int64, 2}[[1 2][3 4],[5 6]]=), =vcat= can be directly applied.
+Also, if =a_test= is =Array[[1 2][3 4],[5 6]]= (more precisely, =Array{Int64, 2}[[1 2][3 4],[5 6]]=), =vcat()= can be directly applied.
 
 ** More thoughts
 

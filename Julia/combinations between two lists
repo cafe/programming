@@ -1,0 +1,17 @@
+#+TITLE: All the possible combinations between two lists
+
+For example, find [[https://en.wikipedia.org/wiki/Wikipedia:List_of_two-letter_combinations][two letter combinations]]:
+
+#+BEGIN_SRC julia
+writedlm("combinations.txt", [a*b for a in ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"], b in ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]], '\n')
+#+END_SRC
+
+This function save the data generated using list comprehensions to a file named "combinations.txt" and use ='\n'= as the delimeter (which defaults to tab). If two lists are not the same, for example:
+
+#+BEGIN_SRC julia
+list1 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+list2 = ["0","1","2","3","4","5","6","7","8","9"]
+writedlm("combinations.txt", vcat([a*b for a in list1, b in list2], [b*a for a in list1, b in list2]), '\n')
+#+END_SRC
+
+Here we combine two resulting lists to make a combination list regardless of the order.

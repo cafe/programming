@@ -21,3 +21,23 @@
   
   2. Remove the existing SSH key stored in your GitHub account, which can be found in =Settings= -> =SSH and GPG keys= ([[https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/][reference]])
   3. Then follow the [[https://help.github.com/articles/generating-an-ssh-key/][generating an SSH key]] guide to generate a new SSH key.
+
+- 将已有的目录同步到GitHub
+
+  1. 若是初次操作
+  
+    #+BEGIN_SRC shell
+    git init
+    git add .
+    git commit -m "说明"
+    git remote add origin git@github.com:cafe/repository_name.git
+    git push -u origin master
+    #+END_SRC
+  
+  2. 若是对已有的 repository 进行日常更新
+  
+    #+BEGIN_SRC shell
+    git add .   
+    git commit -m "说明"
+    git push -u origin master
+    #+END_SRC

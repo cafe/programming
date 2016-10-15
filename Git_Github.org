@@ -24,7 +24,7 @@
 
 - 将已有的目录同步到GitHub
 
-  1. 若是初次操作
+  1. 若是初次操作(记得先在本地目录里放上对应的 =.gitignore= 文件)
   
     #+BEGIN_SRC shell
     git init
